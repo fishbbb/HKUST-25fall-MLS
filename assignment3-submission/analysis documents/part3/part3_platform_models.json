@@ -1,0 +1,47 @@
+{
+  "roofline": {
+    "x86_desktop": {
+      "peak_gflops": 1792.0,
+      "mem_bw_gbps": 50,
+      "dram_pj_per_byte": 15.0,
+      "cache_pj_per_byte": 1.0
+    },
+    "arm_cortex_a78": {
+      "peak_gflops": 307.2,
+      "mem_bw_gbps": 15,
+      "dram_pj_per_byte": 25.0,
+      "cache_pj_per_byte": 2.0
+    },
+    "arm_cortex_m7": {
+      "peak_gflops": 0.4,
+      "mem_bw_gbps": 1.0,
+      "dram_pj_per_byte": 50.0,
+      "cache_pj_per_byte": 5.0
+    }
+  },
+  "energy": {
+    "x86_desktop": {
+      "pJ_per_FLOP": 5.0,
+      "leakage_j_per_s": 10.0
+    },
+    "arm_cortex_a78": {
+      "pJ_per_FLOP": 8.0,
+      "leakage_j_per_s": 2.0
+    },
+    "arm_cortex_m7": {
+      "pJ_per_FLOP": 20.0,
+      "leakage_j_per_s": 0.2
+    }
+  },
+  "memory": {
+    "x86_desktop": {
+      "cache_hit_ratio": 0.85
+    },
+    "arm_cortex_a78": {
+      "cache_hit_ratio": 0.75
+    },
+    "arm_cortex_m7": {
+      "cache_hit_ratio": 0.4
+    }
+  }
+}

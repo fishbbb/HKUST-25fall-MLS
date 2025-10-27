@@ -1,0 +1,87 @@
+{
+  "cpu_simd_utilization": {
+    "x86_desktop": {
+      "latency_optimized": 0.9135448513548041,
+      "memory_optimized": 0.8799771745459932,
+      "throughput_optimized": 0.8965245000979365
+    },
+    "arm_cortex_a78": {
+      "latency_optimized": 1.0,
+      "memory_optimized": 0.875,
+      "throughput_optimized": 0.875
+    },
+    "arm_cortex_m7": {
+      "latency_optimized": 0.892,
+      "memory_optimized": 0.7,
+      "throughput_optimized": 0.7
+    }
+  },
+  "memory_bandwidth_efficiency": {
+    "x86_desktop": {
+      "latency_optimized": 0.9663131846788141,
+      "memory_optimized": 0.9203452131429838,
+      "throughput_optimized": 0.9430053154282332
+    },
+    "arm_cortex_a78": {
+      "latency_optimized": 1.0,
+      "memory_optimized": 0.9700000000000001,
+      "throughput_optimized": 0.9700000000000001
+    },
+    "arm_cortex_m7": {
+      "latency_optimized": 1.0,
+      "memory_optimized": 0.928,
+      "throughput_optimized": 0.928
+    }
+  },
+  "cache_efficiency": {
+    "x86_desktop": {
+      "latency_optimized": 0.7456642263459569,
+      "memory_optimized": 0.6024295678130728,
+      "throughput_optimized": 0.6197471718119698
+    },
+    "arm_cortex_a78": {
+      "latency_optimized": 1.0,
+      "memory_optimized": 0.6532615321400992,
+      "throughput_optimized": 0.65
+    },
+    "arm_cortex_m7": {
+      "latency_optimized": 1.0,
+      "memory_optimized": 0.6503786548327068,
+      "throughput_optimized": 0.65
+    }
+  },
+  "thermal_characteristics": {
+    "x86_desktop": {
+      "latency_optimized": 0.687851763267312,
+      "memory_optimized": 0.606436799405006,
+      "throughput_optimized": 0.6039382314704385
+    },
+    "arm_cortex_a78": {
+      "latency_optimized": 0.5085390293604211,
+      "memory_optimized": 0.6026092257120794,
+      "throughput_optimized": 0.6
+    },
+    "arm_cortex_m7": {
+      "latency_optimized": 0.5079904244847462,
+      "memory_optimized": 0.6003029238661655,
+      "throughput_optimized": 0.6
+    }
+  },
+  "power_efficiency": {
+    "x86_desktop": {
+      "latency_optimized": 0.8429688972529696,
+      "memory_optimized": 0.6918359618238947,
+      "throughput_optimized": 0.7130470541879548
+    },
+    "arm_cortex_a78": {
+      "latency_optimized": 1.0,
+      "memory_optimized": 0.7532615321400993,
+      "throughput_optimized": 0.75
+    },
+    "arm_cortex_m7": {
+      "latency_optimized": 1.0,
+      "memory_optimized": 0.7503786548327069,
+      "throughput_optimized": 0.75
+    }
+  }
+}

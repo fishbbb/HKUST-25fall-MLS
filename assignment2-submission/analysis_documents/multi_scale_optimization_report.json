@@ -1,0 +1,77 @@
+{
+  "optimization_results": {
+    "cloud_server": {
+      "model_path": "cloud_server_optimized.h5",
+      "accuracy": 0.92,
+      "model_size_mb": 150.0,
+      "estimated_latency_ms": 50.0,
+      "memory_usage_mb": 2000.0,
+      "optimization_strategy": "Data parallelism + mixed precision"
+    },
+    "edge_device": {
+      "model_path": "edge_device_optimized.tflite",
+      "accuracy": 0.9,
+      "model_size_mb": 20.0,
+      "estimated_latency_ms": 120.0,
+      "memory_usage_mb": 256.0,
+      "optimization_strategy": "Pruning + INT8 quantization"
+    },
+    "microcontroller": {
+      "model_path": "microcontroller_optimized.tflite",
+      "accuracy": 0.85,
+      "model_size_mb": 0.5,
+      "estimated_latency_ms": 800.0,
+      "memory_usage_mb": 32.0,
+      "optimization_strategy": "Full INT8 quantization + operator fusion"
+    }
+  },
+  "scaling_analysis": {
+    "pareto_accuracy_latency": [
+      [
+        0.92,
+        50.0,
+        "cloud_server"
+      ],
+      [
+        0.9,
+        120.0,
+        "edge_device"
+      ],
+      [
+        0.85,
+        800.0,
+        "microcontroller"
+      ]
+    ],
+    "bottlenecks": {
+      "cloud_server": "OK",
+      "edge_device": "OK",
+      "microcontroller": "OK"
+    },
+    "budget_ratios": {
+      "cloud_server": {
+        "model_size_ratio": 0.15,
+        "latency_ratio": 0.5,
+        "memory_ratio": 0.25,
+        "power_ratio": 0.25
+      },
+      "edge_device": {
+        "model_size_ratio": 0.4,
+        "latency_ratio": 0.6,
+        "memory_ratio": 0.5,
+        "power_ratio": 0.5
+      },
+      "microcontroller": {
+        "model_size_ratio": 0.5,
+        "latency_ratio": 0.8,
+        "memory_ratio": 0.5,
+        "power_ratio": 0.5
+      }
+    }
+  },
+  "deployment_recommendations": [
+    "Deploy to cloud_server for max accuracy and throughput.",
+    "Deploy to edge_device for real-time inference with moderate resources.",
+    "Deploy to microcontroller for ultra-low power IoT applications."
+  ]
+}

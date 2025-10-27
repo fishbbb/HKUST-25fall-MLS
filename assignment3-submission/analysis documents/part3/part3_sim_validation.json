@@ -1,0 +1,108 @@
+{
+  "analytic": {
+    "baseline": {
+      "flops": 600000000.0,
+      "param_bytes": 9083176,
+      "activation_bytes": 602112,
+      "estimated_latency_s": 0.00045976586443430284,
+      "estimated_energy_j": 0.007570199772949255,
+      "estimated_memory_bytes": 9685288,
+      "accuracy": 0.85
+    },
+    "latency_optimized": {
+      "flops": 306122448.97959185,
+      "param_bytes": 2876136,
+      "activation_bytes": 307200,
+      "estimated_latency_s": 0.0004838219367229613,
+      "estimated_energy_j": 0.00623580492090567,
+      "estimated_memory_bytes": 3183336,
+      "accuracy": 0.83
+    },
+    "memory_optimized": {
+      "flops": 600000000.0,
+      "param_bytes": 1692072,
+      "activation_bytes": 602112,
+      "estimated_latency_s": 0.00041025445061677613,
+      "estimated_energy_j": 0.007073532779352862,
+      "estimated_memory_bytes": 2294184,
+      "accuracy": 0.82
+    },
+    "throughput_optimized": {
+      "flops": 600000000.0,
+      "param_bytes": 9083176,
+      "activation_bytes": 602112,
+      "estimated_latency_s": 0.0004779597620654386,
+      "estimated_energy_j": 0.007743868795791914,
+      "estimated_memory_bytes": 9685288,
+      "accuracy": 0.84
+    }
+  },
+  "qemu_arm": {
+    "baseline": {
+      "sim_latency_s": 0.0005138275387657355,
+      "sim_energy_j": 0.008092502425439829
+    },
+    "latency_optimized": {
+      "sim_latency_s": 0.0005253126907174359,
+      "sim_energy_j": 0.00647619179966538
+    },
+    "memory_optimized": {
+      "sim_latency_s": 0.0004831861814434546,
+      "sim_energy_j": 0.007968790687182538
+    },
+    "throughput_optimized": {
+      "sim_latency_s": 0.0005120518082478902,
+      "sim_energy_j": 0.007935520150942794
+    }
+  },
+  "renode_cm": {
+    "baseline": {
+      "sim_latency_s": 0.011554791318373234,
+      "sim_energy_j": 0.011415211791216942
+    },
+    "latency_optimized": {
+      "sim_latency_s": 0.012985850772637808,
+      "sim_energy_j": 0.0100421943699336
+    },
+    "memory_optimized": {
+      "sim_latency_s": 0.011389881449332234,
+      "sim_energy_j": 0.011782936126153524
+    },
+    "throughput_optimized": {
+      "sim_latency_s": 0.01134569042530615,
+      "sim_energy_j": 0.011029322343567616
+    }
+  },
+  "webgpu_proxy": {
+    "baseline": {
+      "sim_latency_s": 0.0006627889169667348,
+      "sim_energy_j": 0.006625775922571381
+    },
+    "latency_optimized": {
+      "sim_latency_s": 0.0007046302717785195,
+      "sim_energy_j": 0.005513903382433625
+    },
+    "memory_optimized": {
+      "sim_latency_s": 0.0006268577896183149,
+      "sim_energy_j": 0.0065621021448010915
+    },
+    "throughput_optimized": {
+      "sim_latency_s": 0.0006285136795232857,
+      "sim_energy_j": 0.006182616013117748
+    }
+  },
+  "model_accuracy": {
+    "qemu_arm": {
+      "mean_rel_err_latency": 0.11311042412939279,
+      "mean_rel_err_energy": 0.06471431873246278
+    },
+    "renode_cm": {
+      "mean_rel_err_latency": 24.868192258379274,
+      "mean_rel_err_energy": 0.5520915355027564
+    },
+    "webgpu_proxy": {
+      "mean_rel_err_latency": 0.4352321810885649,
+      "mean_rel_err_energy": 0.12860903291051415
+    }
+  }
+}

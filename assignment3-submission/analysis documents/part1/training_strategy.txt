@@ -1,0 +1,6 @@
+Transfer Learning Strategy
+Stage 1: Train classification head only (base frozen)
+Stage 1 epochs: 10, lr: 0.001
+Stage 2: Fine-tune base model (partial unfreeze)
+Unfreeze trigger: from layer name contains "block_13"
+Stage 2 epochs: 15, lr: 0.0001

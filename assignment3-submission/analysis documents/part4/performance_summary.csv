@@ -1,0 +1,5 @@
+model,platform,latency_ms,memory_mb,energy_mj,accuracy,throughput_fps,model_alias
+baseline,x86_desktop,50,14,0.02,0.85,20,baseline
+latency_optimized,x86_desktop,30,10,0.018,0.83,33,latency_opt
+memory_optimized,x86_desktop,45,7,0.017,0.82,22,memory_opt
+energy_optimized,x86_desktop,40,9,0.015,0.81,25,energy_opt
